@@ -1,0 +1,15 @@
+body {
+    background-color: yellow;
+}
+
+.square {
+    height: 350px;
+}
+
+#subtitle {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
