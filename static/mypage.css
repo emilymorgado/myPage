@@ -1,5 +1,12 @@
 body {
-    background-color: yellow;
+    /*background-color: yellow;*/
+}
+
+.interests {
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+    height: 300px;
 }
 
 .square {
@@ -12,4 +19,15 @@ body {
 
 #title {
     text-align: center;
+}
+
+.container-fluid {
+    border: 2px, solid, green;    
+}
+
+.ex {
+    border-style: 3px, outset, gray;
+    /*background-color: red;*/
+    text-align: center;
+    /*border: solid, 2px, green;*/
 }

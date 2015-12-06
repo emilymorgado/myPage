@@ -17,12 +17,20 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def welcome():
-    """Homepage welcomes and links to Login, Search, New Account pages"""
+    """Homepage welcomes and links to further information"""
 
+    print "monster still rules!"
 
     return render_template("home.html")
 
 
+@app.route('/python')
+def python():
+    """Shows examples of my use of Python"""
+
+    print "you made it!"
+
+    return render_template("python.html")
 
 
 
