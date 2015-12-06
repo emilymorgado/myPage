@@ -1,0 +1,51 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+<h3>Some examples of mine. Using Python in a project</h3>
+
+<br><br>
+
+<div class="container-fluid">
+
+
+<div class="col-md-8 col-xs-12 col-md-offset-2 ex">
+    <div style="width:700px;" class="col-md-offset-1">
+        <p>Using Python to retrieve information from a form, query the database, compare the form's information to the database's, update the database if necessary. I then construct a personalized url, and redirect the user there.</p>
+    </div>
+    <img src="/static/images/python/db-example.png" alt="database-image" style="height:450px;">
+</div>
+
+
+
+<br><br><br>
+
+
+
+<div class="col-md-8 col-xs-12 col-md-offset-2 ex">
+    <div style="width:700px;" class="col-md-offset-1">
+        <p>Using strptime method to convert datetime objects, in order to subtract one from the other. This, along with some arithmetic, allows me to find the duration in minutes of a period of time.</p>
+    </div>
+    <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;">
+</div>
+
+
+
+<br><br><br>
+
+
+
+<div class="col-md-8 col-xs-12 col-md-offset-2 ex">
+    <div style="width:700px;" class="col-md-offset-1">
+        <p>In order to collect data from multiple checkboxes, I serialized the form. This caused the data to be saved as giant string punctuated by commas and equal signs. Here, I use the module: re (Regular Expression Operations), to remove the unneccessary characters.</p>
+    </div>
+    <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;">
+</div>
+
+</div>
+
+{% endblock %}
