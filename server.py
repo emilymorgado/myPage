@@ -56,6 +56,33 @@ def google_maps():
     return render_template("api.html")
 
 
+@app.route('/html')
+def html():
+    """Shows examples of my use of html"""
+
+    return render_template("html.html")
+
+
+@app.route('/css')
+def css():
+    """Shows examples of my use of html"""
+
+    return render_template("css.html")
+
+
+@app.route('/front-end')
+def front_end():
+    """Shows examples of my use of html"""
+
+    return render_template("boot.html") 
+
+
+@app.route('/extra')
+def front_end():
+    """Shows examples of my use of html"""
+
+    return render_template("extra.html")        
+
 
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the point
