@@ -44,9 +44,17 @@ def sql():
 
 @app.route('/framework')
 def flask():
-    """Shows examples of my use of SQLite and SQLAlchemy"""
+    """Shows examples of my use of Flask and Jinja"""
 
     return render_template("flask.html")
+
+
+@app.route('/api')
+def google_maps():
+    """Shows examples of my use of Google Maps API"""
+
+    return render_template("api.html")
+
 
 
 if __name__ == "__main__":
