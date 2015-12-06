@@ -9,6 +9,12 @@ body {
     height: 300px;
 }
 
+.exception {
+    display: block;
+    margin: auto;
+    padding-top: 75px;
+}
+
 .square {
     height: 350px;
 }

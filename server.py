@@ -19,8 +19,6 @@ app.jinja_env.undefined = StrictUndefined
 def welcome():
     """Homepage welcomes and links to further information"""
 
-    print "monster still rules!"
-
     return render_template("home.html")
 
 
@@ -28,12 +26,20 @@ def welcome():
 def python():
     """Shows examples of my use of Python"""
 
-    print "you made it!"
-
     return render_template("python.html")
 
 
+@app.route('/javascript')
+def javascript():
+    """Shows examples of my use of JS, jQuery, and AJAX"""
 
+    return render_template("js.html")
+
+@app.route('/sql')
+def sql():
+    """Shows examples of my use of SQLite and SQLAlchemy"""
+
+    return render_template("sql.html")
 
 
 
