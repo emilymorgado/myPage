@@ -42,6 +42,12 @@ def sql():
     return render_template("sql.html")
 
 
+@app.route('/framework')
+def flask():
+    """Shows examples of my use of SQLite and SQLAlchemy"""
+
+    return render_template("flask.html")
+
 
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the point
