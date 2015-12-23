@@ -78,7 +78,7 @@ def front_end():
 
 
 @app.route('/extra')
-def front_end():
+def extra_curricular():
     """Shows examples of my use of html"""
 
     return render_template("extra.html")        
