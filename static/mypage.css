@@ -48,3 +48,7 @@ body {
     border: 2px solid #999999;
     /*text-align: center;*/
 }
+
+#bio {
+    text-align: left;
+}
