@@ -81,7 +81,14 @@ def front_end():
 def extra_curricular():
     """Shows examples of my use of html"""
 
-    return render_template("extra.html")        
+    return render_template("extra.html") 
+
+
+@app.route('/testing')
+def test_stuff():
+    """Remembering how to do AJAX"""
+
+    return render_template("testing.html")       
 
 
 if __name__ == "__main__":

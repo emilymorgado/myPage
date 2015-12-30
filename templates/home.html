@@ -10,7 +10,7 @@
 
 <div class="container-fluid">
 <div class="col-md-4 col-xs-12 col-md-offset-4">
-<h1 id="title">Emily Moragdo</h1>
+<h1 id="title">Emily Morgado</h1>
 <h3 class="subtitle">Software Engineer</h3>
 </div>
 </div>
@@ -24,26 +24,130 @@
 
 <br>
 
-<h3 class="subtitle">Learn about Emily's interests</h3>
+<h3 class="subtitle">More on Emily's interests</h3>
+
+
+<!-- Python BUTTON -->
+<div class="container">
+  <div class="row">
+        <button type="button" class="btn btn-info btn-lg" id="myPython">
+          <img src="/static/images/python/python.jpg" alt="python-image" class="interests">
+        </button>
+      </div>
 
 
 
-<div class="container-fluid">
+  <!-- Python Modal -->
+  <div class="modal fade" id="pythonModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">Python in a project</h3>
+        </div>
 
-<div class="row">
-  <a href="/python">
-    <div class="col-md-4 col-xs-12 square">
-        <img src="/static/images/python/python.jpg" alt="python-image" class="interests">
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Retrieve information from a form, query the database, compare form information to database, update  database when necessary. Personalized url for redirection.</p>
+            </div>
+            <img src="/static/images/python/db-example.png" alt="database-image" style="height:450px;">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Use strptime method to convert datetime objects in order to find duration, in minutes.</p>
+            </div>
+            <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;">
+
+        <br><br><br>
+
+            <!-- div 3 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Form serialization to collect data from multiple checkboxes. Use the module: re (Regular Expression Operations), to remove unneccessary characters.</p>
+            </div>
+            <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;">
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    
+    <!-- close modal dialoge -->  
     </div>
-  </a>
+  <!-- close modal div -->
+  </div>
+
+
+<!-- close button -->  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myPython").click(function(){
+        $("#pythonModal").modal();
+    });
+});
+</script>
+
+
+
+<!-- MODAL EXAMPLE ENDS HERE!!!! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container-fluid"> -->
+
+
+  <!-- Button trigger modal -->
+  <!-- <a href="/python"> -->
+<!--     <div class="row">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal">
+        <img src="/static/images/python/python.jpg" alt="python-image" class="interests">
+          Launch demo modal
+      </button>
+    </div> -->
+  <!-- </a> -->
+
+
+
+
   <a href="/javascript">
-    <div class="col-md-4 col-xs-12 square">
+    <div class="col-md-3 col-xs-12 square">
         <img src="/static/images/js/js.jpg" alt="js-image" class="interests">
     </div>
   </a>
   <a href="/sql">
-    <div class="col-md-4 col-xs-12 square">
+    <div class="col-md-3 col-xs-12 square">
         <img src="/static/images/sql/sql.jpg" alt="sql-image" class="exception">
+    </div>
+  </a>
+  <a href="/framework">
+    <div class="col-md-3 col-xs-12 square">
+        <img src="/static/images/framework/flask.jpg" alt="flask-image" class="exception">
     </div>
   </a>
 </div>
@@ -52,40 +156,29 @@
 
 <div class="container-fluid">
 <div class="row">
-  <a href="/framework">
-    <div class="col-md-4 col-xs-12 square">
-        <img src="/static/images/framework/flask.jpg" alt="flask-image" class="exception">
-    </div>
-  </a>
   <a href="/api">
-    <div class="col-md-4 col-xs-12 square">
+    <div class="col-md-3 col-xs-12 square">
         <img src="/static/images/api/maps-logo.jpg" alt="logo-image" class="interests">
     </div>
   </a>
   <a href="/html">
-    <div class="col-md-4 col-xs-12 square">
+    <div class="col-md-3 col-xs-12 square">
         <img src="/static/images/html/html-logo.jpg" alt="html-image" class="interests">
     </div>
   </a>
-</div>
-</div>
-
-
-<div class="container-fluid">
-<div class="row">
   <a href="/css">
-    <div class="col-md-4 col-xs-12 square">
+    <div class="col-md-3 col-xs-12 square">
         <img src="/static/images/css/css.jpg" alt="css-image" class="interests">
     </div>
   </a>
   <a href="/front-end">
-    <div class="col-md-4 col-xs-12 square">
+    <div class="col-md-3 col-xs-12 square">
         <img src="/static/images/boot/bootstrap.jpg" alt="bootstrap-image" class="interests">
     </div>
   </a>
-  <div class="col-md-4 col-xs-12 square" style="background-color:blue;">.col-md-4</div>
 </div>
 </div>
+
 
 
 {% endblock %}
