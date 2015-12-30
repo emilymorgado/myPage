@@ -16,36 +16,23 @@
 </div>
 
 
+<!-- Emily BUTTON -->
 <div class="container-fluid">
-<div class="col-md-4 col-xs-12 col-md-offset-5">
-    <img src="/static/images/emily.jpg" alt="profile-pic" style="height:200px;width:200px;">
+<div class="col-md-4 col-xs-12 col-md-offset-4">
+    <img src="/static/images/emily.jpg" alt="profile-pic" style="height:200px;width:200px;" id="myEmily" class="hover">
+  </div>
 </div>
-</div>
-
-<br>
-
-<h3 class="subtitle">More on Emily's interests</h3>
 
 
-<!-- Python BUTTON -->
-<div class="container">
-  <div class="row">
-        <button type="button" class="btn btn-info btn-lg" id="myPython">
-          <img src="/static/images/python/python.jpg" alt="python-image" class="interests">
-        </button>
-      </div>
-
-
-
-  <!-- Python Modal -->
-  <div class="modal fade" id="pythonModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+<!-- Emily Modal -->
+<div class="modal fade" id="EmilyModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog modal-lg">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">Python in a project</h3>
+          <h3 class="modal-title" id="gridSystemModalLabel" "text-align:center;">Python in a project</h3>
         </div>
 
         <div class="modal-body">
@@ -53,25 +40,15 @@
 
             <!-- div 1 -->
             <div style="width:700px;" class="col-md-offset-1">
-                <p>Retrieve information from a form, query the database, compare form information to database, update  database when necessary. Personalized url for redirection.</p>
+                <p>About Emily with link to her <a href="https://www.youtube.com/channel/UCRQAb8AYkhPbm2-mSFjsd7w"> vlog </a></p>
             </div>
-            <img src="/static/images/python/db-example.png" alt="database-image" style="height:450px;">
 
         <br><br><br>
 
             <!-- div 2 -->
             <div style="width:700px;" class="col-md-offset-1">
-                <p>Use strptime method to convert datetime objects in order to find duration, in minutes.</p>
+                <p>Download Emily's resume here</p>
             </div>
-            <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;">
-
-        <br><br><br>
-
-            <!-- div 3 -->
-            <div style="width:700px;" class="col-md-offset-1">
-                <p>Form serialization to collect data from multiple checkboxes. Use the module: re (Regular Expression Operations), to remove unneccessary characters.</p>
-            </div>
-            <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;">
         
           <!-- close container -->
           </div>
@@ -83,13 +60,83 @@
         </div>
       <!-- close modal content -->  
       </div>
-    
     <!-- close modal dialoge -->  
     </div>
   <!-- close modal div -->
   </div>
+<!-- close button -->  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myEmily").click(function(){
+        $("#EmilyModal").modal();
+    });
+});
+</script>
+
+<br>
+
+<h3 class="subtitle">Emily's interests and projects</h3>
+
+<br>
+
+    <!-- Python BUTTON -->
+    <div class="col-md-3 col-xs-12 square">
+        <img src="/static/images/python/python.jpg" alt="python-image" class="interests hover" id="myPython">
+    </div>  
 
 
+  <!-- Python Modal -->
+  <div class="modal fade" id="pythonModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel" "text-align:center;">Python in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Retrieve information from a form, query the database, compare form information to database, update  database when necessary. Personalized url for redirection.</p>
+            </div>
+            <img src="/static/images/python/db-example.png" alt="database-image" style="height:450px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Use strptime method to convert datetime objects in order to find duration, in minutes.</p>
+            </div>
+            <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 3 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Form serialization to collect data from multiple checkboxes. Use the module: re (Regular Expression Operations), to remove unneccessary characters.</p>
+            </div>
+            <img src="/static/images/python/datetime.png" alt="database-image" style="height:250px;" class="img-responsive center-block">
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
+    </div>
+  <!-- close modal div -->
+  </div>
 <!-- close button -->  
 </div>
 
@@ -103,81 +150,483 @@ $(document).ready(function(){
 
 
 
-<!-- MODAL EXAMPLE ENDS HERE!!!! -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="container-fluid"> -->
-
-
-  <!-- Button trigger modal -->
-  <!-- <a href="/python"> -->
-<!--     <div class="row">
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal">
-        <img src="/static/images/python/python.jpg" alt="python-image" class="interests">
-          Launch demo modal
-      </button>
-    </div> -->
-  <!-- </a> -->
-
-
-
-
-  <a href="/javascript">
+<!-- JS BUTTON -->
     <div class="col-md-3 col-xs-12 square">
-        <img src="/static/images/js/js.jpg" alt="js-image" class="interests">
+        <img src="/static/images/js/js.jpg" alt="js-image" class="interests hover" id="myJS">
     </div>
-  </a>
-  <a href="/sql">
-    <div class="col-md-3 col-xs-12 square">
-        <img src="/static/images/sql/sql.jpg" alt="sql-image" class="exception">
+
+  <!-- JS Modal -->
+  <div class="modal fade" id="JSModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">JavaScript in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+                <div style="width:700px;" class="col-md-offset-1">
+                    <p>jQuery and AJAX for form submission.</p>
+                </div>
+                <img src="/static/images/js/form-submission.jpg" alt="form-image" style="height:450px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>AJAX call to send information to the server and notify the user that they have been added to a class.</p>
+            </div>
+            <img src="/static/images/js/join-class.jpg" alt="join-image" style="height:350px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 3 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>The notification the user receives after being successfully added to a class.</p>
+            </div>
+            <img src="/static/images/js/join-render.jpg" alt="rendered-image" style="height:250px;" class="img-responsive center-block">
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
     </div>
-  </a>
-  <a href="/framework">
-    <div class="col-md-3 col-xs-12 square">
-        <img src="/static/images/framework/flask.jpg" alt="flask-image" class="exception">
-    </div>
-  </a>
+  <!-- close modal div -->
+  </div>
+<!-- close button -->  
 </div>
 
+<script>
+$(document).ready(function(){
+    $("#myJS").click(function(){
+        $("#JSModal").modal();
+    });
+});
+</script>
 
 
-<div class="container-fluid">
-<div class="row">
-  <a href="/api">
+
+<!-- SQL BUTTON -->
     <div class="col-md-3 col-xs-12 square">
-        <img src="/static/images/api/maps-logo.jpg" alt="logo-image" class="interests">
+        <img src="/static/images/sql/sql.jpg" alt="sql-image" class="exception hover" id="mySQL">
     </div>
-  </a>
-  <a href="/html">
-    <div class="col-md-3 col-xs-12 square">
-        <img src="/static/images/html/html-logo.jpg" alt="html-image" class="interests">
+
+  <!-- JS Modal -->
+  <div class="modal fade" id="SQLModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">SQL in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>SQLite3 database and SQLAlchemy ORM.</p>
+            </div>
+            <img src="/static/images/sql/classes.jpg" alt="table-image" style="height:400px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Same table in SQLAlchemy.</p>
+            </div>
+            <img src="/static/images/sql/model-classes.jpg" alt="model-image" style="height:550px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 3 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Relational table, SQLite3.</p>
+            </div>
+            <img src="/static/images/sql/association.jpg" alt="relational-image" style="height:125px;" class="img-responsive center-block">
+
+            <br><br><br>
+
+            <!-- div 4 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Relational table, SQLAlchemy.</p>
+            </div>
+            <img src="/static/images/sql/association-model.jpg" alt="relational-model-image" style="height:300px;" class="img-responsive center-block">
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
     </div>
-  </a>
-  <a href="/css">
-    <div class="col-md-3 col-xs-12 square">
-        <img src="/static/images/css/css.jpg" alt="css-image" class="interests">
-    </div>
-  </a>
-  <a href="/front-end">
-    <div class="col-md-3 col-xs-12 square">
-        <img src="/static/images/boot/bootstrap.jpg" alt="bootstrap-image" class="interests">
-    </div>
-  </a>
+  <!-- close modal div -->
+  </div>
+<!-- close button -->  
 </div>
+
+<script>
+$(document).ready(function(){
+    $("#mySQL").click(function(){
+        $("#SQLModal").modal();
+    });
+});
+</script>
+
+
+
+<!-- Flask Framework BUTTON -->
+    <div class="col-md-3 col-xs-12 square">
+        <img src="/static/images/framework/flask.jpg" alt="flask-image" class="exception hover" id="myFlask">
+    </div>
+
+  <!-- Flask Framework Modal -->
+  <div class="modal fade" id="FlaskModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">Flask Framework in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Flask is a Python microframework. It makes creating sessions for logging in possible. Sessions are stored as cookies in the browser.</p>
+            </div>
+            <img src="/static/images/framework/login.jpg" alt="login-image" style="height:400px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Jinja is Flask's templating language.</p>
+            </div>
+            <img src="/static/images/framework/jinja-cond.jpg" alt="jinja-image" style="height:400px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 3 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Flask aids in building custom urls.</p>
+            </div>
+            <img src="/static/images/framework/url_for.jpg" alt="url-image" style="height:350px;" class="img-responsive center-block">
+
+        <br><br><br>
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
+    </div>
+  <!-- close modal div -->
+  </div>
+<!-- close button -->  
 </div>
+
+<script>
+$(document).ready(function(){
+    $("#myFlask").click(function(){
+        $("#FlaskModal").modal();
+    });
+});
+</script>
+
+
+
+<!-- ROW 2 -->
+
+    <!-- API BUTTON -->
+    <div class="col-md-3 col-xs-12 square">
+        <img src="/static/images/api/maps-logo.jpg" alt="logo-image" class="interests hover" id="myAPI">
+    </div>  
+
+
+  <!-- API Modal -->
+  <div class="modal fade" id="APIModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">An API in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Google Maps API, to submit, store, retrieve, and render addresses in database. Example of saving a location via a form.</p>
+            </div>
+            <img src="/static/images/api/map-render.jpg" alt="map-image" style="height:350px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+            </div>
+            <img src="/static/images/api/map-code.jpg" alt="map-code-image" style="height:350px;" class="img-responsive center-block">
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
+    </div>
+  <!-- close modal div -->
+  </div>
+<!-- close button -->  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myAPI").click(function(){
+        $("#APIModal").modal();
+    });
+});
+</script>
+
+
+
+<!-- HTML BUTTON -->
+    <div class="col-md-3 col-xs-12 square">
+        <img src="/static/images/html/html-logo.jpg" alt="html-image" class="interests hover" id="myHTML">
+    </div>
+
+  <!-- HTML Modal -->
+  <div class="modal fade" id="HTMLModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">HTML in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Dropdowns.</p>
+            </div>
+            <img src="/static/images/html/dropdown.jpg" alt="dropdown-image" style="height:350px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Hidden fields.</p>
+            </div>
+            <img src="/static/images/html/hidden.jpg" alt="hidden-image" style="height:150px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 3 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Dates and times.</p>
+            </div>
+            <img src="/static/images/html/dates.jpg" alt="times-image" style="height:150px;" class="img-responsive center-block">
+
+            <br><br><br>
+
+            <!-- div 4 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>HTML and Jinja.</p>
+            </div>
+            <img src="/static/images/html/withjin.jpg" alt="jinja-image" style="height:175px;" class="img-responsive center-block">
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
+    </div>
+  <!-- close modal div -->
+  </div>
+<!-- close button -->  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myHTML").click(function(){
+        $("#HTMLModal").modal();
+    });
+});
+</script>
+
+
+
+<!-- CSS BUTTON -->
+    <div class="col-md-3 col-xs-12 square">
+        <img src="/static/images/css/css.jpg" alt="css-image" class="interests hover" id="myCSS">
+    </div>
+
+  <!-- CSS Modal -->
+  <div class="modal fade" id="CSSModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">CSS in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Customizing links.</p>
+            </div>
+            <img src="/static/images/css/links.jpg" alt="link-image" style="height:300px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Classes and IDs.</p>
+            </div>
+            <img src="/static/images/css/classid.jpg" alt="id-image" style="height:150px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 3 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Setting background images.</p>
+            </div>
+            <img src="/static/images/css/image.jpg" alt="background-image" style="height:200px;" class="img-responsive center-block">
+        
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
+    </div>
+  <!-- close modal div -->
+  </div>
+<!-- close button -->  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myCSS").click(function(){
+        $("#CSSModal").modal();
+    });
+});
+</script>
+
+
+
+<!-- BOOTSTRAP BUTTON -->
+    <div class="col-md-3 col-xs-12 square">
+        <img src="/static/images/boot/bootstrap.jpg" alt="bootstrap-image" class="interests hover" id="myBoot">
+    </div>
+
+  <!-- BOOTSTRAP Modal -->
+  <div class="modal fade" id="BootModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" id="gridSystemModalLabel text-align:center;">Bootstrap in a project</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <!-- div 1 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Page layout.</p>
+            </div>
+            <img src="/static/images/boot/grids.jpg" alt="grid-image" style="height:50px;" class="img-responsive center-block">
+
+        <br><br><br>
+
+            <!-- div 2 -->
+            <div style="width:700px;" class="col-md-offset-1">
+                <p>Buttons.</p>
+            </div>
+            <img src="/static/images/boot/buttons.jpg" alt="button-image" style="height:75px;" class="img-responsive center-block">
+
+          <!-- close container -->
+          </div>
+        <!-- close modal body -->
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      <!-- close modal content -->  
+      </div>
+    <!-- close modal dialoge -->  
+    </div>
+  <!-- close modal div -->
+  </div>
+<!-- close button -->  
+</div>
+
+<script>
+$(document).ready(function(){
+    $("#myBoot").click(function(){
+        $("#BootModal").modal();
+    });
+});
+</script>
 
 
 
