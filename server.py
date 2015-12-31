@@ -17,86 +17,15 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def welcome():
-    """Homepage welcomes and links to further information"""
+    """Homepage contains modal windows with information. This is a single page site."""
 
     return render_template("home.html")
 
 
-@app.route('/python')
-def python():
-    """Shows examples of my use of Python"""
-
-    return render_template("python.html")
-
-
-@app.route('/javascript')
-def javascript():
-    """Shows examples of my use of JS, jQuery, and AJAX"""
-
-    return render_template("js.html")
-
-@app.route('/sql')
-def sql():
-    """Shows examples of my use of SQLite and SQLAlchemy"""
-
-    return render_template("sql.html")
-
-
-@app.route('/framework')
-def flask():
-    """Shows examples of my use of Flask and Jinja"""
-
-    return render_template("flask.html")
-
-
-@app.route('/api')
-def google_maps():
-    """Shows examples of my use of Google Maps API"""
-
-    return render_template("api.html")
-
-
-@app.route('/html')
-def html():
-    """Shows examples of my use of html"""
-
-    return render_template("html.html")
-
-
-@app.route('/css')
-def css():
-    """Shows examples of my use of html"""
-
-    return render_template("css.html")
-
-
-@app.route('/front-end')
-def front_end():
-    """Shows examples of my use of html"""
-
-    return render_template("boot.html") 
-
-
-@app.route('/extra')
-def extra_curricular():
-    """Shows examples of my use of html"""
-
-    return render_template("extra.html") 
-
-
-@app.route('/testing')
-def test_stuff():
-    """Remembering how to do AJAX"""
-
-    return render_template("testing.html")       
-
 
 if __name__ == "__main__":
-    # We have to set debug=True here, since it has to be True at the point
-    # that we invoke the DebugToolbarExtension
-    app.debug = True
 
-    # connect_to_db(app)
+    app.debug = False
 
     # Use the DebugToolbar
     DebugToolbarExtension(app)
