@@ -17,7 +17,7 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def welcome():
-    """Homepage contains modal windows with information. This is a single page site."""
+    """Contains modal windows with information. This is a single page site."""
 
     return render_template("home.html")
 
