@@ -1,4 +1,4 @@
-"""Class Finder Flask Routes"""
+"""Emily's myPage Flask Routes"""
 
 from jinja2 import StrictUndefined
 
