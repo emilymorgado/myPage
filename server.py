@@ -18,7 +18,7 @@ app.secret_key = "tamandua!"
 app.jinja_env.undefined = StrictUndefined
 
 
-@app.route('/')
+@app.route('emilymorgado.com/')
 def welcome():
     """Contains modal windows with information. This is a single page site."""
 
