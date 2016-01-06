@@ -10,7 +10,10 @@ from flask_debugtoolbar import DebugToolbarExtension
 app = Flask(__name__)
 
 
-app.secret_key = FLASK_SECRET_KEY
+app.secret_key = "tamandua!"
+# app.secret_key = FLASK_SECRET_KEY
+# app.config.from_secrets('secret_key')
+# SECRET_KEY = os.environ.get("FLASK_SECRET_KEY", "ABCDEF")
 
 app.jinja_env.undefined = StrictUndefined
 
